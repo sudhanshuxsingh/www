@@ -2,8 +2,7 @@ export const projects = [
   {
     name: 'Whisper',
     href: 'https://whisper.sudhanshuxsingh.in/',
-    description:
-      'A flexible, AI-powered anonymous feedback collection app with seamless integrations, real-time previews, and robust security, designed to simplify feedback gathering for teams and developers.',
+    description: 'Go-to platform for anonymous feedback collection',
     previewDark: [
       '/project/whisper/dark/1.jpg',
       '/project/whisper/dark/2.jpg',

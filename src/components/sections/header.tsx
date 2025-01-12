@@ -8,18 +8,16 @@ export default function Header() {
                         aria-hidden="true"
                         className="group relative block overflow-hidden"
                     >
-                        <span className="group-hover:-translate-y-full inline-block transition-all duration-300 ease-in-out">
+                        <span className="group-hover:-translate-y-full inline-block transition-transform duration-300 ease-in-out">
                             <span
                                 className="inline-block"
-                                style={{ transitionDelay: "290ms" }}
                             >
                                 Sudhanshu Singh
                             </span>
                         </span>
-                        <span className="absolute top-0 left-0 inline-block translate-y-full transition-all duration-300 ease-in-out group-hover:translate-y-0">
+                        <span className="absolute top-0 left-0 inline-block translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">
                             <span
                                 className="inline-block"
-                                style={{ transitionDelay: "190ms" }}
                             >
                                 sudhanshuxsingh
                             </span>

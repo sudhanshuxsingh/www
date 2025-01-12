@@ -17,11 +17,12 @@ export default function FeatureCard() {
                     <p className="text-muted-foreground mt-[2px] text-xs">Created by Eiichiro Oda</p>
                 </div>
             </div>
-            <div className="flex flex-row gap-x-1.5 items-center pl-1">
+            <div className="flex flex-row gap-x-1.5 items-center pl-1 py-1">
                 <span className="relative flex h-2 w-2">
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-muted-foreground"></span>
                 </span>
-                <div className="text-xs text-muted-foreground">Current favioruit read & watch</div></div>
+                <div className="text-xs text-muted-foreground">Current favorite read & watch</div>
+            </div>
         </div>
     )
 }

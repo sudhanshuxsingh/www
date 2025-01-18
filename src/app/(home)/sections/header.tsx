@@ -1,8 +1,10 @@
+import CommandMenu from "@/components/features/command-menu";
+
 export default function Header() {
     return (
         <div className="">
-            <div className="cursor-pointer">
-                <h1 className="font-medium text-base transition-element">
+            <div className="cursor-pointer flex items-center gap-2 justify-between">
+                <h1 className="font-medium text-md transition-element">
                     <span className="sr-only">Sudhanshu Singh</span>
                     <span
                         aria-hidden="true"
@@ -24,6 +26,8 @@ export default function Header() {
                         </span>
                     </span>
                 </h1>
+
+                <CommandMenu />
             </div>
             <p className="text-sm text-muted-foreground">
                 Building <span className="font-medium">cool things</span>

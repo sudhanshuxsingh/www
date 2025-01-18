@@ -4,7 +4,6 @@ import { GeistSans } from "geist/font/sans"
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
-// import { Navigation } from "@/components/sections/navigation";
 
 export const metadata: Metadata = {
   title: "Sudhanshu Singh",
@@ -29,7 +28,6 @@ export default function RootLayout({
           defaultTheme="system"
         >
           {children}
-          {/* <Navigation /> */}
         </ThemeProvider>
       </body>
     </html>

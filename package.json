@@ -50,6 +50,7 @@
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
     "tailwindcss-content-visibility": "^1.0.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "velite": "^0.2.2"
   }
 }

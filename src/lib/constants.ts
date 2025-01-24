@@ -17,4 +17,22 @@ export const projects = [
     ],
     hasPreview: true,
   },
+  {
+    name: 'EmailWhiz',
+    href: '#',
+    description:
+      'Effortlessly craft stunning email templates with AI, send test emails, and export reusable HTML in just a few clicks.',
+    previewDark: [],
+    previewLight: [],
+    hasPreview: false,
+  },
+  {
+    name: 'Flow',
+    href: '#',
+    description:
+      'Effortlessly generate professional diagrams like process flows, class diagrams, and UML designs using the power of generative AI.',
+    previewDark: [],
+    previewLight: [],
+    hasPreview: false,
+  },
 ];

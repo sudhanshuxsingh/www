@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 99.02%;
-    --foreground: 0 0% 8.63%;
+    --background: 252 62% 99%;
+    --foreground: 252 67% 2%;
     --card: 0 0% 99.02%;
     --card-foreground: 0 0% 8.63%;
     --popover: 0 0% 99.02%;
@@ -32,8 +32,8 @@
     --breakpoint-2xl: 100rem;
   }
   .dark {
-    --background: 0 0% 8.63%;
-    --foreground: 0 0% 98%;
+    --background: 270, 5%, 7%;
+    --foreground: 252 37% 98%;
     --card: 0 0% 8.63%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 8.63%;
@@ -57,11 +57,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
     --color-white: #fff;
-    --pattern-fg: color-mix(
-      in oklab,
-      var(--color-white) /* #000 = #000000 */ 5%,
-      transparent
-    );
+    --pattern-fg: color-mix(in oklab, var(--color-white) 5%, transparent);
   }
 }
 

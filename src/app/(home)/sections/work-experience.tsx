@@ -1,15 +1,8 @@
-import GridContainer from '@/components/ui/grid-container';
-import PatternContainer from '@/components/ui/pattern-container';
-
 export default function WorkExperience() {
   return (
-    <GridContainer className="">
-      <GridContainer direction="to-bottom">
-        <PatternContainer className="px-2 md:px-0">
-          <p className="mb-4 font-medium">Work</p>
-        </PatternContainer>
-      </GridContainer>
-      <div className="px-2 md:px-0">
+    <div className="">
+      <p className="mb-4 font-medium">Work</p>
+      <div className="">
         <div className="flex items-center gap-2">
           <p className="font-medium">Tata Consultancy Services</p>
         </div>
@@ -21,7 +14,7 @@ export default function WorkExperience() {
             <p className="font-medium">SDE | Innovator Cadre</p>
             <p className="text-xs">
               <>
-                Jul 2022{/* */} -{/* */} {/* */}Feb 2024{/* */} {/* */}(1 yr, 7
+                Jan 2023{/* */} -{/* */} {/* */}Current{/* */} {/* */}(1 yr, 7
                 m){/* */}{' '}
                 <span className="font-normal capitalize">
                   • {/* */}kolkata, west bengal, india
@@ -46,6 +39,6 @@ export default function WorkExperience() {
           </div>
         </div>
       </div>
-    </GridContainer>
+    </div>
   );
 }

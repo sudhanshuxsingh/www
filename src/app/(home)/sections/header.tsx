@@ -1,11 +1,9 @@
 import CommandMenu from '@/components/features/command-menu';
-import GridContainer from '@/components/ui/grid-container';
-import PatternContainer from '@/components/ui/pattern-container';
 
 export default function Header() {
   return (
-    <GridContainer className="">
-      <PatternContainer className="relative flex items-center justify-between gap-4 px-2 md:px-0">
+    <div className="">
+      <div className="relative flex items-center justify-between gap-4">
         <h1 className="text-md transition-element cursor-pointer font-medium">
           <span className="sr-only">Sudhanshu Singh</span>
           <span
@@ -21,13 +19,11 @@ export default function Header() {
           </span>
         </h1>
         <CommandMenu />
-      </PatternContainer>
+      </div>
 
-      <GridContainer direction="to-top" className="px-2 md:px-0">
-        <p className="text-sm text-muted-foreground">
-          Building <span className="font-medium">cool things</span>
-        </p>
-      </GridContainer>
-    </GridContainer>
+      <p className="text-sm text-muted-foreground">
+        Building <span className="font-medium">cool things</span>
+      </p>
+    </div>
   );
 }

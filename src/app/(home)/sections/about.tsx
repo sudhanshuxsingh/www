@@ -1,10 +1,6 @@
-// import FeatureCard from "../../../components/ui/feature-card";
-
-import GridContainer from '@/components/ui/grid-container';
-
 export default function About() {
   return (
-    <GridContainer className="space-y-4 text-pretty px-2 text-muted-foreground md:px-0">
+    <div className="space-y-4 text-pretty text-muted-foreground">
       <p>
         I build <span className="italic text-foreground">pixel-perfect</span>{' '}
         designs and{' '}
@@ -16,6 +12,6 @@ export default function About() {
         webtoons, always exploring new stories and worlds.{' '}
       </p>
       {/* <FeatureCard /> */}
-    </GridContainer>
+    </div>
   );
 }

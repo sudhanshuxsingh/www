@@ -1,10 +1,12 @@
 import CommandMenu from "@/components/features/command-menu";
+import GridContainer from "@/components/ui/grid-container";
+import PatternContainer from "@/components/ui/pattern-container";
 
 export default function Header() {
     return (
-        <div className="">
-            <div className="cursor-pointer flex items-center gap-2 justify-between">
-                <h1 className="font-medium text-md transition-element">
+        <GridContainer className="">
+            <PatternContainer className="flex items-center gap-4 justify-between relative px-2 md:px-0">
+                <h1 className="font-medium cursor-pointer text-md transition-element">
                     <span className="sr-only">Sudhanshu Singh</span>
                     <span
                         aria-hidden="true"
@@ -26,12 +28,14 @@ export default function Header() {
                         </span>
                     </span>
                 </h1>
-
                 <CommandMenu />
-            </div>
-            <p className="text-sm text-muted-foreground">
-                Building <span className="font-medium">cool things</span>
-            </p>
-        </div>
+            </PatternContainer>
+
+            <GridContainer direction="to-top" className="px-2 md:px-0">
+                <p className="text-sm text-muted-foreground">
+                    Building <span className="font-medium">cool things</span>
+                </p>
+            </GridContainer>
+        </GridContainer>
     )
 }

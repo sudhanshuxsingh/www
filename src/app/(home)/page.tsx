@@ -8,13 +8,20 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Home() {
   return (
-    <Container className="grid gap-12">
-      <Header />
-      <About />
-      <WorkExperience />
-      <Project />
-      {/* <FeatureCard /> */}
-      <ThemeToggle />
-    </Container>
+    <div className="max-w-[100vw] overflow-x-hidden">
+      <Container className="grid min-h-dvh grid-cols-1 justify-center [--gutter-width:2.5rem]  md:grid-cols-[var(--gutter-width)_minmax(0,var(--breakpoint-2xl))_var(--gutter-width)] px-0">
+        <div className="col-start-1 row-span-full row-start-1 hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed md:block "></div>
+        <div className="grid gap-12 py-16">
+          <Header />
+          <About />
+          <WorkExperience />
+          <Project />
+          {/* <FeatureCard /> */}
+          <ThemeToggle />
+        </div>
+        <div className="row-span-full row-start-1 hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed md:col-start-3 md:block "></div>
+
+      </Container>
+    </div>
   );
 }

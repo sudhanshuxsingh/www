@@ -2,25 +2,32 @@ import { projects } from "@/lib/constants";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import GridContainer from "@/components/ui/grid-container";
+import PatternContainer from "@/components/ui/pattern-container";
+// import div from "@/components/ui/grid-container";
 
 export default function Project() {
     return (
         <div className="">
-            <p className="font-medium mb-4">Projects</p>
+            <GridContainer>
+                <PatternContainer className="px-2 md:px-0">
+                    <p className="font-medium mb-4">Projects</p>
+                </PatternContainer>
+            </GridContainer>
             {
                 projects.map(({ name, description, hasPreview, href, previewDark, previewLight }, i) => {
                     return (
-                        <div className="space-y-6" key={i}>
+                        <GridContainer className="space-y-6 px-2 md:px-0" key={i}>
                             <div className="">
                                 <Link
-                                 href={href}
+                                    href={href}
                                 >
                                     {name}
                                 </Link>
                                 <p className="text-muted-foreground">{description}</p>
                             </div>
                             {
-                                hasPreview ? <div className="flex -space-x-8">
+                                hasPreview ? <div className="flex -space-x-8 px-1 pb-4">
                                     {
                                         previewDark.map((preview, idx) => (
                                             <Link key={idx} className={cn(
@@ -34,7 +41,7 @@ export default function Project() {
                                     }
                                 </div> : null
                             }
-                        </div>
+                        </GridContainer>
                     )
                 })
             }

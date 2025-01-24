@@ -1,3 +1,5 @@
+import { calculateTimeDifference } from '@/lib/utils';
+
 export default function WorkExperience() {
   return (
     <div className="">
@@ -14,8 +16,8 @@ export default function WorkExperience() {
             <p className="font-medium">SDE | Innovator Cadre</p>
             <p className="text-xs">
               <>
-                Jan 2023{/* */} -{/* */} {/* */}Current{/* */} {/* */}(1 yr, 7
-                m){/* */}{' '}
+                Feb 2024{/* */} -{/* */} {/* */}Current{/* */} {/* */}(
+                {calculateTimeDifference('2024-02-01')}){/* */}{' '}
                 <span className="font-normal capitalize">
                   • {/* */}kolkata, west bengal, india
                 </span>{' '}

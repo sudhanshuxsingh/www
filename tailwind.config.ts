@@ -121,8 +121,8 @@ export default {
       animation: {
         cloud: 'cloud 120s linear infinite',
         marker: 'marker 4s ease-out infinite',
-        plane: 'plane 30s linear infinite',
-        'plane-shadow': 'plane-shadow 30s linear infinite',
+        plane: 'plane 25s linear infinite',
+        'plane-shadow': 'plane-shadow 25s linear infinite',
       },
     },
   },

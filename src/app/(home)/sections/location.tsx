@@ -1,10 +1,10 @@
 import Image from 'next/image';
-
+import MAP_IMG from '@/asset/location.webp';
 export default function Location() {
   return (
     <div className="space-y-2">
       <p className="font-medium">Where</p>
-      <div className="relative h-fit w-fit overflow-hidden">
+      <div className="relative overflow-hidden">
         <Image
           src="/cloud.webp"
           width="390"
@@ -30,15 +30,16 @@ export default function Location() {
           className="absolute -translate-x-96 animate-plane-shadow [animation-delay:5s]"
         />
         <Image
-          src={'/location.jpg'}
+          src={MAP_IMG}
           height={553}
-          width={983}
+          placeholder="blur"
+          priority={true}
           alt="Map"
           className="h-auto w-full rounded-md"
         />
         <div aria-hidden>
-          <div className="absolute left-2/3 top-1/2 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 animate-marker rounded-full bg-blue-500"></div>
-          <div className="shadow-marker absolute left-2/3 top-1/2 z-10 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-neutral-50 bg-blue-500"></div>
+          <div className="absolute left-2/3 top-1/2 z-10 h-3 w-3 -translate-x-1/2 -translate-y-1/2 animate-marker rounded-full bg-blue-500"></div>
+          <div className="shadow-marker absolute left-2/3 top-1/2 z-10 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-neutral-50 bg-blue-500"></div>
         </div>
       </div>
     </div>

@@ -29,6 +29,7 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --breakpoint-2xl: 100rem;
   }
   .dark {
     --background: 0 0% 8.63%;
@@ -55,6 +56,12 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --color-white: #fff;
+    --pattern-fg: color-mix(
+      in oklab,
+      var(--color-white) /* #000 = #000000 */ 5%,
+      transparent
+    );
   }
 }
 
@@ -67,6 +74,7 @@
   body {
     @apply bg-background text-foreground;
   }
+
   ::-webkit-scrollbar {
     width: 5px;
   }

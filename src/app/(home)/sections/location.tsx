@@ -31,11 +31,13 @@ export default function Location() {
         />
         <Image
           src={MAP_IMG}
-          height={553}
+          height={250}
           placeholder="blur"
           priority={true}
           alt="Map"
-          className="h-auto w-full rounded-md"
+          draggable="false"
+          loading="eager"
+          className="rounded"
         />
         <div aria-hidden>
           <div className="absolute left-2/3 top-1/2 z-10 h-3 w-3 -translate-x-1/2 -translate-y-1/2 animate-marker rounded-full bg-blue-500"></div>

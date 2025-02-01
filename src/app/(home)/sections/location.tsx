@@ -37,7 +37,7 @@ export default function Location() {
           alt="Map"
           draggable="false"
           loading="eager"
-          className="rounded"
+          className="rounded w-full"
         />
         <div aria-hidden>
           <div className="absolute left-2/3 top-1/2 z-10 h-3 w-3 -translate-x-1/2 -translate-y-1/2 animate-marker rounded-full bg-blue-500"></div>
